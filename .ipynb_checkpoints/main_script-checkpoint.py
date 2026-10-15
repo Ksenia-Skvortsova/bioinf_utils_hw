@@ -8,6 +8,11 @@ check_length,
 check_quality
 )
 
+from helpers.bio_files import(
+convert_multiline_fasta_to_oneline,
+parse_blast_output
+)
+
 def filter_fastq(
     input_fastq: str,
     output_fastq: str, 
@@ -43,3 +48,18 @@ def filter_fastq(
                 check_quality(quality, quality_threshold)):
                 
                 out_f.write(f"{header}\n{sequence}\n{plus}\n{quality}\n")
+
+def convert_fasta(input_fasta:str, output_fasta: str) -> None: 
+    """
+    Главная функция для преобразования многострочного fasta-файла в однострочный.
+    Основная работа происходит в вспомогательной функции из helpers/bio_files.
+    """
+    convert_multiline_fasta_to_oneline(input_fasta, output_fasta)
+
+
+def parse_blast(input_file: str, output_file: str) -> None: 
+    """
+    Главная функция для парсинга BLAST-вывода.
+    Основная работа происходит в вспомогательной функции из helpers/bio_files.
+    """
+    parse_blast_output(input_file, output_file)

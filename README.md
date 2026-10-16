@@ -43,3 +43,7 @@ from main_script parse_blast
 
 parse_blast("name_of_your_BLAST_file.txt", "results_best_hits.fasta")
 ```
+
+## Требования 
+- Python 3.10+
+- Стандартная библиотека Python   

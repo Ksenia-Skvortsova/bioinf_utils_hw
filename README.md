@@ -46,4 +46,7 @@ parse_blast("name_of_your_BLAST_file.txt", "results_best_hits.fasta")
 
 ## Требования 
 - Python 3.10+
-- Стандартная библиотека Python   
+- Стандартная библиотека Python
+
+## MEM
+![mem](images/Kp3owKAwgcU9nqOurK6JxtlZHlhye5k2lsiNeIoS7AjUSZVEQe2sbMwDQKJCszwarJf4mMw-IIltxdAQ7JDd8Y9xBysUhw.jpg)
